@@ -58,7 +58,6 @@ template <typename T>
 void MyList<T>::clear() {
     Node<T> * p = m_sentinel->m_next;
     for(int i = 0; i < m_size; i++) {
-        cout << "deleting: " << p->m_element << endl;
         delete p;
         p = p->m_next;
     }
